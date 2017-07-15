@@ -1,6 +1,8 @@
 FROM alpine:latest
 
-MAINTAINER brainsam@yandex.ru
+# Original version by <brainsam@yandex.ru>
+# Further changes by <Johann du Toit>
+MAINTAINER tomek@swingdev.io
 
 RUN apk --update add git build-base automake libtool m4 autoconf libevent-dev openssl-dev c-ares-dev  && \
 	git clone https://github.com/pgbouncer/pgbouncer.git && \
